@@ -1,0 +1,3 @@
+[28-May-2025 22:43:56 Asia/Ho_Chi_Minh] Database connection failed: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[28-May-2025 22:44:23 Asia/Ho_Chi_Minh] Database connection failed: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[28-May-2025 22:44:24 Asia/Ho_Chi_Minh] Database connection failed: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
