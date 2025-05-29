@@ -1,0 +1,15 @@
+[28-May-2025 22:43:56 Asia/Ho_Chi_Minh] Database connection failed: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[28-May-2025 22:44:23 Asia/Ho_Chi_Minh] Database connection failed: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[28-May-2025 22:44:24 Asia/Ho_Chi_Minh] Database connection failed: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[29-May-2025 15:50:05 Asia/Ho_Chi_Minh] Database Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'manhphuo_crm_phuquoc.suppliers' doesn't exist
+[29-May-2025 15:50:05 Asia/Ho_Chi_Minh] Exception: Database operation failed in /home/manhphuo/coralmountainltd.com/klook/app/core/Model.php:17
+[29-May-2025 15:50:08 Asia/Ho_Chi_Minh] Database Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'manhphuo_crm_phuquoc.suppliers' doesn't exist
+[29-May-2025 15:50:08 Asia/Ho_Chi_Minh] Exception: Database operation failed in /home/manhphuo/coralmountainltd.com/klook/app/core/Model.php:17
+[29-May-2025 16:01:59 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function AvailabilityController::create(), 0 passed in /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php on line 70 and exactly 1 expected in /home/manhphuo/coralmountainltd.com/klook/app/controllers/AvailabilityController.php:31
+Stack trace:
+#0 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): AvailabilityController->create()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#3 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#4 {main}
+  thrown in /home/manhphuo/coralmountainltd.com/klook/app/controllers/AvailabilityController.php on line 31
