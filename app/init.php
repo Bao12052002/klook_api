@@ -18,7 +18,19 @@ spl_autoload_register(function ($class) {
         }
     }
 });
-
+if (file_exists(__DIR__ . '/../.env')) {
+    try {
+        $env = parse_ini_file(__DIR__ . '/../.env');
+        if ($env === false) {
+            throw new Exception('Error parsing .env file');
+        }
+        foreach ($env as $key => $value) {
+            $_ENV[$key] = $value;
+        }
+    } catch (Exception $e) {
+        error_log('Environment file error: ' . $e->getMessage());
+    }
+}
 // Load config files
 require_once 'config/database.php';
 require_once 'config/auth.php';

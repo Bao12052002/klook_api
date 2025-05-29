@@ -5,9 +5,9 @@ class Database {
     
     private function __construct() {
         $host = $_ENV['DB_HOST'] ?? 'localhost';
-        $dbname = $_ENV['DB_NAME'] ?? 'nhaxinhd_klook_api';
-        $username = $_ENV['DB_USER'] ?? 'nhaxinhd_klook_api';
-        $password = $_ENV['DB_PASS'] ?? 'rZd6{owpRaSb';
+        $dbname = $_ENV['DB_NAME'];
+        $username = $_ENV['DB_USER'];
+        $password = $_ENV['DB_PASS'];
         
         try {
             $this->connection = new PDO(
