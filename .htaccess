@@ -1,5 +1,0 @@
-    # Rewrite cho hệ thống Klook API riêng
-RewriteCond %{REQUEST_URI} ^/klook/
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^klook/(.*)$ /klook/public/index.php [QSA,L]
