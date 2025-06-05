@@ -4,24 +4,15 @@ $router->get('/supplier', 'SupplierController@index', ['AuthMiddleware']);
 // Product routes
 $router->get('/products', 'ProductController@index', ['AuthMiddleware']);
 $router->get('/products/{id}', 'ProductController@show', ['AuthMiddleware']);
-$router->post('/products', 'ProductController@create', ['AuthMiddleware', 'CapabilityMiddleware']);
-$router->put('/products/{id}', 'ProductController@update', ['AuthMiddleware', 'CapabilityMiddleware']);
-$router->delete('/products/{id}', 'ProductController@delete', ['AuthMiddleware', 'CapabilityMiddleware']);
-
 // New Availability Calendar endpoint (matching API specification)
 $router->post('/availability/calendar', 'AvailabilityController@calendar', ['AuthMiddleware']);
 $router->post('/availability', 'AvailabilityController@check', ['AuthMiddleware']);
-
-// Legacy Availability routes (keep for backward compatibility if needed)
-$router->get('/products/{id}/availability', 'AvailabilityController@index', ['AuthMiddleware']);
-$router->post('/products/{id}/availability', 'AvailabilityController@create', ['AuthMiddleware', 'CapabilityMiddleware']);
-
 // Booking routes
-$router->get('/bookings', 'BookingController@index', ['AuthMiddleware']);
-$router->get('/bookings/{id}', 'BookingController@show', ['AuthMiddleware']);
-$router->post('/bookings', 'BookingController@create', ['AuthMiddleware', 'CapabilityMiddleware']);
-$router->put('/bookings/{id}', 'BookingController@update', ['AuthMiddleware', 'CapabilityMiddleware']);
-$router->delete('/bookings/{id}', 'BookingController@cancel', ['AuthMiddleware', 'CapabilityMiddleware']);
+$router->get('/bookings', 'BookingController@index', ['AuthMiddleware']); // Giả sử đây là Get Bookings
+$router->get('/bookings/{uuid}', 'BookingController@show', ['AuthMiddleware']); // Giả sử đây là Get Booking by UUID
+$router->post('/bookings', 'BookingController@reserveBooking', ['AuthMiddleware']); // Route MỚI cho Booking Reservation
+$router->post('/bookings/{uuid}/confirm', 'BookingController@confirmBooking', ['AuthMiddleware']); // Sẽ cần tạo
+$router->post('/bookings/{uuid}/cancel', 'BookingController@cancelBooking', ['AuthMiddleware']);   // Sẽ cần tạo (hoặc dùng DELETE)
 
 // Pickup routes
 $router->get('/pickups', 'PickupController@index', ['AuthMiddleware']);

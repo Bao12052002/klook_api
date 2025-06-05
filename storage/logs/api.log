@@ -1,0 +1,184 @@
+[05-Jun-2025 09:48:54 Asia/Ho_Chi_Minh] HoldSlots PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JSON)))
+                    AND is_blocked = 0
+                    ORDER BY s...' at line 5 for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07
+[05-Jun-2025 09:48:54 Asia/Ho_Chi_Minh] Booking Creation Failed: Could not hold slots. Prod:phu-quoc-snorkeling-56528, Opt:Small_Group, Date:2025-06-07, Pax:3. Tx Rolled Back.
+[05-Jun-2025 09:48:54 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Critical Error: Failed to secure availability (slots could not be held).
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(115): Booking->createKlookReservation()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+[05-Jun-2025 09:48:54 Asia/Ho_Chi_Minh] BookingController::reserveBooking Exception: Failed to secure availability (slots could not be held).
+[05-Jun-2025 09:48:56 Asia/Ho_Chi_Minh] HoldSlots PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JSON)))
+                    AND is_blocked = 0
+                    ORDER BY s...' at line 5 for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07
+[05-Jun-2025 09:48:56 Asia/Ho_Chi_Minh] Booking Creation Failed: Could not hold slots. Prod:phu-quoc-snorkeling-56528, Opt:Small_Group, Date:2025-06-07, Pax:3. Tx Rolled Back.
+[05-Jun-2025 09:48:56 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Critical Error: Failed to secure availability (slots could not be held).
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(115): Booking->createKlookReservation()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+[05-Jun-2025 09:48:56 Asia/Ho_Chi_Minh] BookingController::reserveBooking Exception: Failed to secure availability (slots could not be held).
+[05-Jun-2025 09:50:18 Asia/Ho_Chi_Minh] HoldSlots PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JSON)))
+                    AND is_blocked = 0
+                    ORDER BY s...' at line 5 for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07
+[05-Jun-2025 09:50:18 Asia/Ho_Chi_Minh] Booking Creation Failed: Could not hold slots. Prod:phu-quoc-snorkeling-56528, Opt:Small_Group, Date:2025-06-07, Pax:2. Tx Rolled Back.
+[05-Jun-2025 09:50:18 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Critical Error: Failed to secure availability (slots could not be held).
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(115): Booking->createKlookReservation()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+[05-Jun-2025 09:50:18 Asia/Ho_Chi_Minh] BookingController::reserveBooking Exception: Failed to secure availability (slots could not be held).
+[05-Jun-2025 09:51:23 Asia/Ho_Chi_Minh] HoldSlots PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JSON)))
+                    AND is_blocked = 0
+                    ORDER BY s...' at line 5 for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07
+[05-Jun-2025 09:51:23 Asia/Ho_Chi_Minh] Booking Creation Failed: Could not hold slots. Prod:phu-quoc-snorkeling-56528, Opt:Small_Group, Date:2025-06-07, Pax:2. Tx Rolled Back.
+[05-Jun-2025 09:51:23 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Critical Error: Failed to secure availability (slots could not be held).
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(115): Booking->createKlookReservation()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+[05-Jun-2025 09:51:23 Asia/Ho_Chi_Minh] BookingController::reserveBooking Exception: Failed to secure availability (slots could not be held).
+[05-Jun-2025 09:53:07 Asia/Ho_Chi_Minh] HoldSlots PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JSON)))
+                    AND is_blocked = 0
+                    ORDER BY s...' at line 5 for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07
+[05-Jun-2025 09:53:07 Asia/Ho_Chi_Minh] Booking Creation Failed: Could not hold slots. Prod:phu-quoc-snorkeling-56528, Opt:Small_Group, Date:2025-06-07, Pax:2. Tx Rolled Back.
+[05-Jun-2025 09:53:07 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Critical Error: Failed to secure availability (slots could not be held).
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(115): Booking->createKlookReservation()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+[05-Jun-2025 09:53:07 Asia/Ho_Chi_Minh] BookingController::reserveBooking Exception: Failed to secure availability (slots could not be held).
+[05-Jun-2025 09:53:46 Asia/Ho_Chi_Minh] HoldSlots PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JSON)))
+                    AND is_blocked = 0
+                    ORDER BY s...' at line 5 for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07
+[05-Jun-2025 09:53:46 Asia/Ho_Chi_Minh] Booking Creation Failed: Could not hold slots. Prod:phu-quoc-snorkeling-56528, Opt:Small_Group, Date:2025-06-07, Pax:2. Tx Rolled Back.
+[05-Jun-2025 09:53:46 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Critical Error: Failed to secure availability (slots could not be held).
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(115): Booking->createKlookReservation()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+[05-Jun-2025 09:53:46 Asia/Ho_Chi_Minh] BookingController::reserveBooking Exception: Failed to secure availability (slots could not be held).
+[05-Jun-2025 09:55:28 Asia/Ho_Chi_Minh] HoldSlots PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JSON)))
+                    AND is_blocked = 0
+                    ORDER BY s...' at line 5 for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07
+[05-Jun-2025 09:55:28 Asia/Ho_Chi_Minh] Booking Creation Failed: Could not hold slots. Prod:phu-quoc-snorkeling-56528, Opt:Small_Group, Date:2025-06-07, Pax:2. Tx Rolled Back.
+[05-Jun-2025 09:55:28 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Critical Error: Failed to secure availability (slots could not be held).
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(115): Booking->createKlookReservation()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+[05-Jun-2025 09:55:28 Asia/Ho_Chi_Minh] BookingController::reserveBooking Exception: Failed to secure availability (slots could not be held).
+[05-Jun-2025 09:55:56 Asia/Ho_Chi_Minh] HoldSlots PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JSON)))
+                    AND is_blocked = 0
+                    ORDER BY s...' at line 5 for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07
+[05-Jun-2025 09:55:56 Asia/Ho_Chi_Minh] Booking Creation Failed: Could not hold slots. Prod:phu-quoc-snorkeling-56528, Opt:Small_Group, Date:2025-06-07, Pax:2. Tx Rolled Back.
+[05-Jun-2025 09:55:56 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Critical Error: Failed to secure availability (slots could not be held).
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(115): Booking->createKlookReservation()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+[05-Jun-2025 09:55:56 Asia/Ho_Chi_Minh] BookingController::reserveBooking Exception: Failed to secure availability (slots could not be held).
+[05-Jun-2025 10:02:35 Asia/Ho_Chi_Minh] HoldSlots: Successfully held 2 slots for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07. New available_slots: 8. Record ID: 2
+[05-Jun-2025 10:02:35 Asia/Ho_Chi_Minh] Booking Creation: Slots held for 2 pax for new booking BKG684108CB9A7BC.
+[05-Jun-2025 10:02:35 Asia/Ho_Chi_Minh] Database Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'booking_db_id' in 'INSERT INTO'
+[05-Jun-2025 10:02:35 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Transaction Rolled Back due to Exception: Database operation failed
+[05-Jun-2025 10:02:35 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Critical Error: Database operation failed
+#0 /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php(81): Model->query()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(115): Booking->createKlookReservation()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#4 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#5 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#6 {main}
+[05-Jun-2025 10:02:35 Asia/Ho_Chi_Minh] BookingController::reserveBooking Exception: Database operation failed
+[05-Jun-2025 10:04:15 Asia/Ho_Chi_Minh] HoldSlots: Successfully held 2 slots for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07. New available_slots: 8. Record ID: 2
+[05-Jun-2025 10:04:15 Asia/Ho_Chi_Minh] Booking Creation: Slots held for 2 pax for new booking BKG6841092F2ACEE.
+[05-Jun-2025 10:04:15 Asia/Ho_Chi_Minh] Database Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'booking_db_id' in 'INSERT INTO'
+[05-Jun-2025 10:04:15 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Transaction Rolled Back due to Exception: Database operation failed
+[05-Jun-2025 10:04:15 Asia/Ho_Chi_Minh] BookingModel::createKlookReservation Critical Error: Database operation failed
+#0 /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php(81): Model->query()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(115): Booking->createKlookReservation()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#4 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#5 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#6 {main}
+[05-Jun-2025 10:04:15 Asia/Ho_Chi_Minh] BookingController::reserveBooking Exception: Database operation failed
+[05-Jun-2025 10:05:02 Asia/Ho_Chi_Minh] HoldSlots: Successfully held 2 slots for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07. New available_slots: 8. Record ID: 2
+[05-Jun-2025 10:05:02 Asia/Ho_Chi_Minh] Booking Creation: Slots held for 2 pax for new booking BKG6841095E79E40.
+[05-Jun-2025 10:05:02 Asia/Ho_Chi_Minh] Booking BKG6841095E79E40 successfully created and committed.
+[05-Jun-2025 10:05:02 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method Booking::getBookingForKlookResponse() in /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php:125
+Stack trace:
+#0 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#3 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#4 {main}
+  thrown in /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php on line 125
+[05-Jun-2025 10:09:55 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected identifier "Chào", expecting "function" or "const" in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php on line 97
+[05-Jun-2025 10:11:21 Asia/Ho_Chi_Minh] HoldSlots: Successfully held 2 slots for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07. New available_slots: 6. Record ID: 2
+[05-Jun-2025 10:11:21 Asia/Ho_Chi_Minh] Booking Creation: Slots held for 2 pax for new booking BKG68410AD9BB21D.
+[05-Jun-2025 10:11:21 Asia/Ho_Chi_Minh] Booking BKG68410AD9BB21D successfully created and committed.
+[05-Jun-2025 10:11:21 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Booking::getBookingForKlookResponse(): Argument #2 ($productControllerInstance) must be of type ProductController, Product given, called in /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php on line 125 and defined in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php:97
+Stack trace:
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(125): Booking->getBookingForKlookResponse()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+  thrown in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php on line 97
+[05-Jun-2025 10:15:36 Asia/Ho_Chi_Minh] HoldSlots: Successfully held 2 slots for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07. New available_slots: 4. Record ID: 2
+[05-Jun-2025 10:15:36 Asia/Ho_Chi_Minh] Booking Creation: Slots held for 2 pax for new booking BKG68410BD83505A.
+[05-Jun-2025 10:15:36 Asia/Ho_Chi_Minh] Booking BKG68410BD83505A successfully created and committed.
+[05-Jun-2025 10:15:36 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method ProductController::transformProductForKlook() in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php:121
+Stack trace:
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(125): Booking->getBookingForKlookResponse()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+  thrown in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php on line 121
+[05-Jun-2025 10:21:46 Asia/Ho_Chi_Minh] HoldSlots: Successfully held 2 slots for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07. New available_slots: 2. Record ID: 2
+[05-Jun-2025 10:21:46 Asia/Ho_Chi_Minh] Booking Creation: Slots held for 2 pax for new booking BKG68410D4A9F805.
+[05-Jun-2025 10:21:46 Asia/Ho_Chi_Minh] Booking BKG68410D4A9F805 successfully created and committed.
+[05-Jun-2025 10:21:46 Asia/Ho_Chi_Minh] PHP Warning:  Undefined property: Booking::$productOptionModel in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php on line 162
+[05-Jun-2025 10:21:46 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function findByProductAndOption() on null in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php:162
+Stack trace:
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(125): Booking->getBookingForKlookResponse()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+  thrown in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php on line 162
+[05-Jun-2025 10:30:28 Asia/Ho_Chi_Minh] HoldSlots: Successfully held 2 slots for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07. New available_slots: 0. Record ID: 2
+[05-Jun-2025 10:30:28 Asia/Ho_Chi_Minh] Booking Creation: Slots held for 2 pax for new booking BKG68410F54A6657.
+[05-Jun-2025 10:30:28 Asia/Ho_Chi_Minh] Booking BKG68410F54A6657 successfully created and committed.
+[05-Jun-2025 10:30:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined property: Booking::$productOptionModel in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php on line 162
+[05-Jun-2025 10:30:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function findByProductAndOption() on null in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php:162
+Stack trace:
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(125): Booking->getBookingForKlookResponse()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+  thrown in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php on line 162

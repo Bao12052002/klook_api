@@ -218,4 +218,94 @@ class Product extends Model {
         
         return $products;
     }
+        public function getUnitPricingForDisplay($productId, $optionId, $unitId, $currency, $referenceDateStr) {
+        $sql = "SELECT original_price, retail_price, net_price, currency_precision, included_taxes 
+                FROM tbl_klook_pricing_rules 
+                WHERE product_id = :product_id 
+                  AND option_id = :option_id
+                  AND unit_id = :unit_id
+                  AND currency = :currency
+                  AND is_active = 1 -- Sử dụng 1 cho boolean
+                  AND :ref_date_gte >= COALESCE(valid_from, '1900-01-01') 
+                  AND :ref_date_lte <= COALESCE(valid_to, '9999-12-31')
+                ORDER BY 
+                    (valid_from IS NOT NULL AND valid_to IS NOT NULL) DESC, 
+                    (valid_from IS NOT NULL OR valid_to IS NOT NULL) DESC,
+                    created_at DESC 
+                LIMIT 1";
+        
+        $params = [
+            'product_id' => $productId,
+            'option_id' => $optionId,
+            'unit_id' => $unitId,
+            'currency' => $currency,
+            'ref_date_gte' => $referenceDateStr, // Placeholder mới
+            'ref_date_lte' => $referenceDateStr, // Placeholder mới (cùng giá trị)
+        ];
+
+        $stmt = $this->query($sql, $params);
+        $rule = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($rule) {
+            return [
+                'original' => (int)$rule['original_price'],
+                'retail' => (int)$rule['retail_price'],
+                'net' => $rule['net_price'] === null ? null : (int)$rule['net_price'],
+                'currency' => $currency,
+                'currencyPrecision' => (int)$rule['currency_precision'],
+                'includedTaxes' => $rule['included_taxes'] ? json_decode($rule['included_taxes'], true) : [] 
+            ];
+        }
+        return null;
+    }
+
+    /**
+     * Lấy thông tin giá hiển thị cho một Option hoặc Product (nếu pricingPer="BOOKING").
+     */
+    public function getBookingLevelPricingForDisplay($productId, $optionId, $currency, $referenceDateStr) {
+        $sql = "SELECT original_price, retail_price, net_price, currency_precision, included_taxes 
+                FROM tbl_klook_pricing_rules 
+                WHERE product_id = :product_id 
+                  AND unit_id IS NULL 
+                  AND currency = :currency
+                  AND is_active = 1 -- Sử dụng 1 cho boolean
+                  AND :ref_date_gte >= COALESCE(valid_from, '1900-01-01')
+                  AND :ref_date_lte <= COALESCE(valid_to, '9999-12-31')";
+        
+        $params = [
+            'product_id' => $productId,
+            'currency' => $currency,
+            'ref_date_gte' => $referenceDateStr, // Placeholder mới
+            'ref_date_lte' => $referenceDateStr, // Placeholder mới (cùng giá trị)
+        ];
+
+        if ($optionId) {
+            $sql .= " AND option_id = :option_id";
+            $params['option_id'] = $optionId;
+        } else {
+            $sql .= " AND option_id IS NULL";
+        }
+        
+        $sql .= " ORDER BY 
+                    (valid_from IS NOT NULL AND valid_to IS NOT NULL) DESC, 
+                    (valid_from IS NOT NULL OR valid_to IS NOT NULL) DESC,
+                    (option_id IS NOT NULL) DESC, 
+                    created_at DESC 
+                  LIMIT 1";
+
+        $stmt = $this->query($sql, $params);
+        $rule = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($rule) {
+            return [
+                'original' => (int)$rule['original_price'],
+                'retail' => (int)$rule['retail_price'],
+                'net' => $rule['net_price'] === null ? null : (int)$rule['net_price'],
+                'currency' => $currency,
+                'currencyPrecision' => (int)$rule['currency_precision'],
+                'includedTaxes' => $rule['included_taxes'] ? json_decode($rule['included_taxes'], true) : []
+            ];
+        }
+        return null;
+    }
 }
