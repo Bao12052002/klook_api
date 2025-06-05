@@ -1,0 +1,13 @@
+thrown in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php on line 97
+[05-Jun-2025 10:55:39 Asia/Ho_Chi_Minh] HoldSlots: Successfully held 2 slots for phu-quoc-snorkeling-56528/Small_Group on 2025-06-07. New available_slots: 6. Record ID: 2
+[05-Jun-2025 10:55:39 Asia/Ho_Chi_Minh] Booking Creation: Slots held for 2 pax for new booking BKG6841153BA9D01.
+[05-Jun-2025 10:55:39 Asia/Ho_Chi_Minh] Booking BKG6841153BA9D01 successfully created and committed.
+[05-Jun-2025 10:55:39 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Booking::getBookingForKlookResponse(): Argument #4 ($availabilityModel) must be of type Availability, ProductOption given, called in /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php on line 125 and defined in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php:97
+Stack trace:
+#0 /home/manhphuo/coralmountainltd.com/klook/app/controllers/BookingController.php(125): Booking->getBookingForKlookResponse()
+#1 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(70): BookingController->reserveBooking()
+#2 /home/manhphuo/coralmountainltd.com/klook/app/core/Router.php(41): Router->executeRoute()
+#3 /home/manhphuo/coralmountainltd.com/klook/app/core/App.php(17): Router->dispatch()
+#4 /home/manhphuo/coralmountainltd.com/klook/public/index.php(5): App->run()
+#5 {main}
+  thrown in /home/manhphuo/coralmountainltd.com/klook/app/models/Booking.php on line 97
