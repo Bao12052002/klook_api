@@ -3,9 +3,11 @@
 
 class ProductController extends Controller {
     private $productModel;
+    private $productOptionModel;
 
     public function __construct() {
         $this->productModel = new Product();
+        $this->productOptionModel = new ProductOption();
         // Nếu bạn có PricingModel riêng, hãy khởi tạo ở đây
         // private $pricingModel;
         // $this->pricingModel = new PricingModel();

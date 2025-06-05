@@ -122,7 +122,7 @@ class BookingController extends Controller {
                 return ResponseHelper::error(500, 'BOOKING_RESERVATION_FAILED', 'Failed to reserve booking. Slot hold may have failed or DB error.');
             }
 
-            $bookingResponse = $this->bookingModel->getBookingForKlookResponse($dbBookingId,new ProductController(),   $this->productModel, $this->availabilityModel, false); // false vì dùng ID nội bộ
+            $bookingResponse = $this->bookingModel->getBookingForKlookResponse($dbBookingId,new ProductController(), $this->productOptionModel,  $this->productModel, $this->availabilityModel, false); // false vì dùng ID nội bộ
             if(!$bookingResponse) {
                  ErrorHelper::logError("Failed to retrieve booking {$dbBookingId} for Klook response after creation.");
                  return ResponseHelper::error(500, 'BOOKING_DATA_INCOMPLETE', 'Booking created but failed to format response.');

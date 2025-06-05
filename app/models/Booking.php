@@ -97,8 +97,9 @@ class Booking extends Model {
       public function getBookingForKlookResponse(
         string $bookingDbIdOrUUID, 
         ProductController $productControllerInstance, // Truyền instance của ProductController
-        Product $productModel, // Vẫn cần ProductModel để findWithFullDetails
+        Product $productModel, // Vẫn cần ProductModel để findWithFullDetails   
         Availability $availabilityModel, // Có thể cần cho một số logic
+        ProductOption $productOptionModelInstance,
         bool $isKlookUUID = true
     ) {
         $fieldToQuery = $isKlookUUID ? 'uuid' : 'id';
